@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///D:\Java Projects\Temp\config-server-repository
+          clone-on-start: true
+      fail-fast: true
+    security:
+      user:
+        name: spring_cloud
+        password: ENC(SuBwFNB/rYQfu9HREjYEhAxhu7Q0RQmZhuN2/FLUMQBnby9uttS2MKVfqWBd2d0j)
+
+jasypt:
+  encryptor:
+    password: 1234567
